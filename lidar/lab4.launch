@@ -1,0 +1,20 @@
+<launch>
+    <!-- Launch the TurtleBot3 Gazebo world -->
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" />
+    <arg name="username" default="$(env USER)" />
+
+    <!-- Spawn the red box -->
+    <node name="spawn_red_box" pkg="gazebo_ros" type="spawn_model" 
+          args="-file /home/catkin_ws/gazebo_models/red_box/model.sdf -sdf -model red_box -x 2 -y 0 -z 0.1"   
+          output="screen"/>
+
+    <!-- Spawn the green box -->
+    <node name="spawn_green_box" pkg="gazebo_ros" type="spawn_model" 
+          args="-file /home/catkin_ws/gazebo_models/green_box/model.sdf -sdf -model green_box -x 2 -y 1 -z 0.1" 
+          output="screen"/>
+
+    <!-- Spawn the blue box -->
+    <node name="spawn_blue_box" pkg="gazebo_ros" type="spawn_model" 
+          args="-file /home/catkin_ws/gazebo_models/blue_box/model.sdf -sdf -model blue_box -x 2 -y -1 -z 0.1" 
+          output="screen"/>
+</launch>
