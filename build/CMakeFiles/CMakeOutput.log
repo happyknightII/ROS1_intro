@@ -489,3 +489,229 @@ make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
 
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e81f5/fast && /usr/bin/make -f CMakeFiles/cmTC_e81f5.dir/build.make CMakeFiles/cmTC_e81f5.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e81f5.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_HAS_HIDDEN_VISIBILITY   -fvisibility=hidden -o CMakeFiles/cmTC_e81f5.dir/src.cxx.o -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e81f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e81f5.dir/link.txt --verbose=1
+/usr/bin/c++   -DCOMPILER_HAS_HIDDEN_VISIBILITY    -rdynamic CMakeFiles/cmTC_e81f5.dir/src.cxx.o  -o cmTC_e81f5 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9f540/fast && /usr/bin/make -f CMakeFiles/cmTC_9f540.dir/build.make CMakeFiles/cmTC_9f540.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9f540.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_9f540.dir/src.cxx.o -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9f540
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f540.dir/link.txt --verbose=1
+/usr/bin/c++   -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY    -rdynamic CMakeFiles/cmTC_9f540.dir/src.cxx.o  -o cmTC_9f540 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0a33a/fast && /usr/bin/make -f CMakeFiles/cmTC_0a33a.dir/build.make CMakeFiles/cmTC_0a33a.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0a33a.dir/src.cxx.o
+/usr/bin/c++    -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_0a33a.dir/src.cxx.o -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                                  ^
+/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                                  ^
+/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+Linking CXX executable cmTC_0a33a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a33a.dir/link.txt --verbose=1
+/usr/bin/c++   -DCOMPILER_HAS_DEPRECATED_ATTR    -rdynamic CMakeFiles/cmTC_0a33a.dir/src.cxx.o  -o cmTC_0a33a 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_02450/fast && /usr/bin/make -f CMakeFiles/cmTC_02450.dir/build.make CMakeFiles/cmTC_02450.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02450.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_02450.dir/CheckIncludeFile.c.o   -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_02450
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02450.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_02450.dir/CheckIncludeFile.c.o  -o cmTC_02450 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the drand48 exist passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_10e6c/fast && /usr/bin/make -f CMakeFiles/cmTC_10e6c.dir/build.make CMakeFiles/cmTC_10e6c.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10e6c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_10e6c.dir/CheckSymbolExists.c.o   -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_10e6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10e6c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_10e6c.dir/CheckSymbolExists.c.o  -o cmTC_10e6c 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+File /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef drand48
+  return ((int*)(&drand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9ca58/fast && /usr/bin/make -f CMakeFiles/cmTC_9ca58.dir/build.make CMakeFiles/cmTC_9ca58.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ca58.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_9ca58.dir/CheckIncludeFile.c.o   -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9ca58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ca58.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9ca58.dir/CheckIncludeFile.c.o  -o cmTC_9ca58 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file FL/Fl.H exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_317e8/fast && /usr/bin/make -f CMakeFiles/cmTC_317e8.dir/build.make CMakeFiles/cmTC_317e8.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_317e8.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_317e8.dir/CheckIncludeFile.cxx.o -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_317e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_317e8.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_317e8.dir/CheckIncludeFile.cxx.o  -o cmTC_317e8 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pgm.h exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_11708/fast && /usr/bin/make -f CMakeFiles/cmTC_11708.dir/build.make CMakeFiles/cmTC_11708.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_11708.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_11708.dir/CheckIncludeFile.cxx.o -c /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_11708
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11708.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_11708.dir/CheckIncludeFile.cxx.o  -o cmTC_11708 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c833e/fast && /usr/bin/make -f CMakeFiles/cmTC_c833e.dir/build.make CMakeFiles/cmTC_c833e.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c833e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_c833e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c833e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c833e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    -rdynamic CMakeFiles/cmTC_c833e.dir/CheckFunctionExists.c.o  -o cmTC_c833e  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_89de6/fast && /usr/bin/make -f CMakeFiles/cmTC_89de6.dir/build.make CMakeFiles/cmTC_89de6.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89de6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_89de6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_89de6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89de6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_89de6.dir/CheckFunctionExists.c.o  -o cmTC_89de6 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_69bee/fast && /usr/bin/make -f CMakeFiles/cmTC_69bee.dir/build.make CMakeFiles/cmTC_69bee.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_69bee.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_69bee.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_69bee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69bee.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_69bee.dir/CheckFunctionExists.c.o  -o cmTC_69bee 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bf949/fast && /usr/bin/make -f CMakeFiles/cmTC_bf949.dir/build.make CMakeFiles/cmTC_bf949.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf949.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_bf949.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bf949
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf949.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    -rdynamic CMakeFiles/cmTC_bf949.dir/CheckFunctionExists.c.o  -o cmTC_bf949 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_45eca/fast && /usr/bin/make -f CMakeFiles/cmTC_45eca.dir/build.make CMakeFiles/cmTC_45eca.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45eca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_45eca.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_45eca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45eca.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_45eca.dir/CheckFunctionExists.c.o  -o cmTC_45eca 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_583be/fast && /usr/bin/make -f CMakeFiles/cmTC_583be.dir/build.make CMakeFiles/cmTC_583be.dir/build
+make[1]: Entering directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_583be.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_583be.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_583be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_583be.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    -rdynamic CMakeFiles/cmTC_583be.dir/CheckFunctionExists.c.o  -o cmTC_583be  -lICE 
+make[1]: Leaving directory '/home/br192438/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+
