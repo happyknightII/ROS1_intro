@@ -741,6 +741,9 @@ OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//build python wrapper
+PYTHON_BUILD:BOOL=OFF
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 
@@ -1322,7 +1325,7 @@ map_server_BINARY_DIR:STATIC=/home/br192438/catkin_ws/build/navigation/map_serve
 map_server_SOURCE_DIR:STATIC=/home/br192438/catkin_ws/src/navigation/map_server
 
 //Dependencies for the target
-map_server_image_loader_LIB_DEPENDS:STATIC=general;BulletSoftBody;general;BulletDynamics;general;BulletCollision;general;LinearMath;general;/usr/lib/x86_64-linux-gnu/libBulletDynamics.so;general;/usr/lib/x86_64-linux-gnu/libBulletCollision.so;general;/usr/lib/x86_64-linux-gnu/libLinearMath.so;general;/usr/lib/x86_64-linux-gnu/libBulletSoftBody.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/usr/lib/x86_64-linux-gnu/libSDLmain.a;general;/usr/lib/x86_64-linux-gnu/libSDL.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libSDL_image.so;
+map_server_image_loader_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libBulletDynamics.so;general;/usr/lib/x86_64-linux-gnu/libBulletCollision.so;general;/usr/lib/x86_64-linux-gnu/libLinearMath.so;general;/usr/lib/x86_64-linux-gnu/libBulletSoftBody.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/usr/lib/x86_64-linux-gnu/libSDLmain.a;general;/usr/lib/x86_64-linux-gnu/libSDL.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libSDL_image.so;
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -1654,6 +1657,30 @@ turtlebot3_teleop_BINARY_DIR:STATIC=/home/br192438/catkin_ws/build/turtlebot3/tu
 //Value Computed by CMake
 turtlebot3_teleop_SOURCE_DIR:STATIC=/home/br192438/catkin_ws/src/turtlebot3/turtlebot3_teleop
 
+//Value Computed by CMake
+unitree_legged_msgs_BINARY_DIR:STATIC=/home/br192438/catkin_ws/build/unitree_real/src/unitree_ros_to_real/unitree_legged_msgs
+
+//The directory containing a CMake configuration file for unitree_legged_msgs.
+unitree_legged_msgs_DIR:PATH=/home/br192438/catkin_ws/devel/share/unitree_legged_msgs/cmake
+
+//Value Computed by CMake
+unitree_legged_msgs_SOURCE_DIR:STATIC=/home/br192438/catkin_ws/src/unitree_real/src/unitree_ros_to_real/unitree_legged_msgs
+
+//Value Computed by CMake
+unitree_legged_real_BINARY_DIR:STATIC=/home/br192438/catkin_ws/build/unitree_real/src/unitree_ros_to_real/unitree_legged_real
+
+//Value Computed by CMake
+unitree_legged_real_SOURCE_DIR:STATIC=/home/br192438/catkin_ws/src/unitree_real/src/unitree_ros_to_real/unitree_legged_real
+
+//Value Computed by CMake
+unitree_legged_sdk_BINARY_DIR:STATIC=/home/br192438/catkin_ws/build/unitree_real/src/unitree_legged_sdk
+
+//The directory containing a CMake configuration file for unitree_legged_sdk.
+unitree_legged_sdk_DIR:PATH=/home/br192438/catkin_ws/devel/share/unitree_legged_sdk/cmake
+
+//Value Computed by CMake
+unitree_legged_sdk_SOURCE_DIR:STATIC=/home/br192438/catkin_ws/src/unitree_real/src/unitree_legged_sdk
+
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
 
@@ -1892,7 +1919,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=36
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=39
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1953,7 +1980,7 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 DART_DEFINITIONS:INTERNAL=
 DART_INCLUDE_DIRS:INTERNAL=/usr/include
-DART_LIBRARIES:INTERNAL=dart;dart
+DART_LIBRARIES:INTERNAL=dart
 //Boost min version requirement
 DART_MIN_BOOST_VERSION:INTERNAL=1.58.0
 DART_dart_DEFINITIONS:INTERNAL=
@@ -1972,7 +1999,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Bullet:INTERNAL=[/usr/lib/x86_64-linux-gnu/libBulle
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/include/x86_64-linux-gnu][c ][v7.68.0()]
 //Details about finding DART
-FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart;dart][cfound components: dart ][v(6.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart][cfound components: dart ][v(6.6)]
 //Details about finding DL
 FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
 //Details about finding FLTK
